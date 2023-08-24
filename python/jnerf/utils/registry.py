@@ -22,7 +22,7 @@ class Registry:
 
 
 def build_from_cfg(cfg,registry,**kwargs):
-    if isinstance(cfg,str):
+    if isinstance(cfg, str):
         return registry.get(cfg)(**kwargs)
     elif isinstance(cfg,dict):
         args = cfg.copy()

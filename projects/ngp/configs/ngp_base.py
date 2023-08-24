@@ -36,7 +36,7 @@ expdecay=dict(
     decay_end=None
 )
 dataset_type = 'NerfDataset'
-dataset_dir = 'data/lego'
+dataset_dir = 'data/dtu_scan24'
 dataset = dict(
     train=dict(
         type=dataset_type,
@@ -60,7 +60,7 @@ dataset = dict(
     ),
 )
 
-exp_name = "lego"
+exp_name = "dtu_scan24"
 log_dir = "./logs"
 tot_train_steps = 40000
 # Background color, value range from 0 to 1
@@ -68,7 +68,7 @@ background_color = [0, 0, 0]
 # Hash encoding function used in Instant-NGP
 hash_func = "p0 ^ p1 * 19349663 ^ p2 * 83492791"
 cone_angle_constant = 0.00390625
-near_distance = 0.2
+near_distance = 0.01
 n_rays_per_batch = 4096
 n_training_steps = 16
 # Expected number of sampling points per batch
